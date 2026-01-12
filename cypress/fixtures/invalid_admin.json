@@ -1,0 +1,22 @@
+[
+  {
+    "name": "incorrect login",
+    "email": "name@localhost.ru",
+    "password": "qamid"
+  },
+  {
+    "name": "incorrect password",
+    "email": "qamid@qamid.ru",
+    "password": "123"
+  },
+  {
+    "name": "empty email",
+    "email": "",
+    "password": "qamid"
+  },
+  {
+    "name": "empty password",
+    "email": "qamid@qamid.ru",
+    "password": ""
+  }
+]

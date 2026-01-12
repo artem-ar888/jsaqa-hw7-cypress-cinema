@@ -1,0 +1,14 @@
+{
+  "name": "jsaqa-hw7-cypress-cinema",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Arafailov Artem",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --record --key 4cd8dce2-5206-4897-b738-3452939d37bd"
+},
+  "devDependencies": {
+    "cypress": "^10.6.0"
+  }
+}
