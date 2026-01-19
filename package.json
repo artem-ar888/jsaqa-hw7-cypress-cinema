@@ -6,8 +6,12 @@
   "author": "Arafailov Artem",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --record --key 4cd8dce2-5206-4897-b738-3452939d37bd"
-},
+    "test": "npx cypress run --record --key 4cd8dce2-5206-4897-b738-3452939d37bd",
+    "cy:admin-page": "cypress run --spec cypress/e2e/admin_page/* --record --key 4cd8dce2-5206-4897-b738-3452939d37bd",
+    "cy:main-page": "cypress run --spec cypress/e2e/main_page/* --record --key 4cd8dce2-5206-4897-b738-3452939d37bd",
+    "cy:other": "cypress run --spec cypress/e2e/other/* --record --key 4cd8dce2-5206-4897-b738-3452939d37bd",
+    "cy:parallel": "npm run cy:admin-page -- --browser chrome --group admin-page --ci-build-id 1 & npm run cy:main-page -- --browser chrome --group main-page --ci-build-id 1 & npm run cy:other -- --browser chrome --group other --ci-build-id 1"
+  },
   "devDependencies": {
     "cypress": "^10.6.0"
   }

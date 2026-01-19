@@ -16,3 +16,5 @@ coverage/
 dist/
 build/
 screenshots/
+
+jenkins.war
